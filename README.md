@@ -122,5 +122,5 @@ info@minigui.com.
 
 ## COPYING
 
-    Copyright (C ) 2007-2017 Beijing FMSoft Technologies Co., Ltd.
+Copyright (C ) 2007-2017 Beijing FMSoft Technologies Co., Ltd.
   
