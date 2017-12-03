@@ -1,0 +1,55 @@
+#ifndef PMP_MUSIC_H
+#define PMP_MUSIC_H
+
+#define MSG_PLAY_NEXT_FILE		(MSG_USER + 7)
+#define MSG_PLAY_PRE_FILE		(MSG_USER + 8)
+
+
+#define MSG_START_MENU			(MSG_USER + 10)
+
+#define MSG_EQ_MOD				(MSG_USER + 13)
+
+
+#define STAT_NORM_PLAY	0
+#define STAT_AB_PLAY	1
+#define STAT_NORM_TO_AB	2
+
+#define DSP_STAT_PLAY	0
+#define DSP_STAT_FF		1
+#define DSP_STAT_FB		2
+
+#define ID_TIMER_NORM		100
+#define ID_TIMER_PREVIEW	101
+#define ID_TIMER_TWINKLE	102
+
+
+#define STRIP_W	263
+#define STRIP_H	24
+#define STRIP_L	((320-STRIP_W)/2)
+#define STRIP_T	(240-28-20-STRIP_H)
+
+#define SLIDE_W			10
+#define	SLIDE_H			STRIP_H	
+#define SLIDE_START		19
+#define SLIDE_END		233	
+
+#define CUR_TIME_BOTTOM	STRIP_T
+#define CUR_TIME_TOP	(LRC_BOTTOM)
+#define CUR_TIME_LEFT	(STRIP_L+SLIDE_START-10)
+#define CUR_TIME_RIGHT	(STRIP_L+SLIDE_START+SLIDE_W+10)
+
+#define TT_TIME_BOTTOM	CUR_TIME_BOTTOM
+#define TT_TIME_TOP		CUR_TIME_TOP
+#define TT_TIME_LEFT	(STRIP_L+SLIDE_END -10)
+#define TT_TIME_RIGHT	(STRIP_L+SLIDE_END+SLIDE_W+10)
+
+#define INFO_LEFT	0
+#define INFO_RIGHT	320
+#define INFO_TOP	50
+#define INFO_BOTTOM	(STRIP_T-10)
+
+#define LRC_LEFT	0
+#define LRC_RIGHT	320
+#define LRC_TOP		(STRIP_T-50)
+#define LRC_BOTTOM	(LRC_TOP+30)
+#endif

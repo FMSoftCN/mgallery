@@ -1,0 +1,121 @@
+******************************************************************************
+What's new in this version (1.0, 2007/05/28 ~ 2007/06/08):
+08/18: add check if music_status.status is stopped, while dealing with fast backward   
+    * src/music_play.c
+
+06/14: Add is_ignore(int) funtion to limit that only one app exist in system 
+among music, video and radio.  
+     * src/main.c
+
+06/12: Fix a bug in captionbar whose time flashed on and off. 
+     * lib/captionbar.c
+
+06/06: FillBoxWithBitmap in MSG_ERASEBKGND of desktop, tip and menu window, if macro BITBMPBK is defined (configure --enable-bitmapbk)   
+     * configure.in
+     * src/main.c
+     * lib/menu.c
+     * lib/tip.c
+
+06/07: fixed a bug in music_play.c.when pmp_select_media_file return NULL, close window error. filename case error in music_show_file
+     * src/music_play.c
+
+06/06: add evb in configure.in, add -lengine in Makefile.am. fixed a bug in music     
+     * configure.in
+     * src/Makefile.am
+     * src/music_play.c
+     * src/music_menu.c
+
+06/06: Add incore resource cache.
+     * resource.c
+
+06/05: fixed a bug in configur.in(CFLAGS = $CFLAGS... )
+     * configure.in
+
+06/04: Cleanup the implementation of MD5.
+     * include/md5.h and lib/md5c.c files.
+     * lib/res_cache.c (Rename get_md5 to pmp_get_md5).
+
+06/04: ex_filebrs_loadicon_in_cpufree return node whose icon have been loaded in file_linklist   
+     * file_linklist.h
+     * file_linklist.c
+
+06/04: change system() to statfs in setup_sys.c    
+     * setup_sys.c
+
+06/01: add re-entry property in select window for PMP_BROWSER_MODE_THUMBNAIL model    
+     * sel_win_thu.c
+     * sel_win.c
+
+06/01: test and debuged file linklist used in select file in thumbnail mode
+     * file_linklist.h
+     * file_linklist.c
+
+06/01: add setup switch language    
+     * setup.c
+     * setup_proc.c
+
+06/01: add MB_YESNO in infowin.c
+     * infowin.c
+
+06/01: Add resource cache based on md5 hash.
+     * md5.c
+     * md5.h
+     * res_cache.h
+     * res_cache.c
+
+05/30: Modify image2c tool to be a general linux command tool.
+    * image2c.h
+    * bin2c.c
+    * make_hash.c
+    * trav_dir.c
+
+05/29: The revision housekeeper's map resources (map document lays aside position).
+     * housekeeper.c
+     * housekeeper_map.c
+     * delete file of res/housekeeper/housekeeper_data.c
+     * add file of src/housekeeper_data.c
+
+05/29: Solve the case of the game can't exit (belong to document open exception handling).
+     * housekeeper.c
+     * russia.c
+     * worm.c
+
+05/29: Enters when once more the game figures out the score the demonstration mistake.
+     * worm.c
+
+05/29: The revision housekeeper's map resources
+     * worm.c
+     * add file of src/worm_level.c 
+
+05/29: Revision resources document
+     * lib/text_zhcn.c
+     * include/text_id.h
+
+05/29: ADD file link list files    
+    * lib/file_linklist.c
+    * lib/file_linklist.h
+
+05/29: Edit AUTHORS file.
+    * AUTHORS
+
+05/29: Modify configure.in to rename the project name to 'mgallery' and
+version to 1.0:
+    * configure.in
+
+05/28: add re-entry property in select window for PMP_BROWSER_MODE_LIST mode    
+     * sel_win_list.c
+     * sel_win.c
+
+05/28: The revision tape recorder procedure, enables it can't spring the
+menu when it is recording.
+     * recorder.c
+
+05/28: The revision tape recorder procedure renovates the region 
+     * recorder.c
+
+05/28: Revises the stopwatch to demonstrate the situation (original 
+marginalvalue does not demonstrate).
+     * stopwatch.c
+
+05/28: Just entered the worm's condition situation. 
+     * worm.c
